@@ -1,3 +1,3 @@
 # Just playing around...
 
-
+```curl -fsSL https://raw.githubusercontent.com/octomagon/scourgify/master/macReport.py | python```
