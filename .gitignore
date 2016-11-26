@@ -1,2 +1,7 @@
+# Because Python
+*.pyc
+/dist/
+/*.egg-info
+
 .DS_Store
 venv

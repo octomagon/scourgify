@@ -11,7 +11,7 @@ daemonPaths = ["/Library/LaunchAgents", "/Library/LaunchDaemons", "/Library/Star
 
 
 
-def main():
+def run():
 	procs = runningProcs()
 
 	print ""
@@ -70,4 +70,4 @@ def filesInDir(path):
 
 
 if __name__ == "__main__":
-	main()
+	run()
