@@ -104,7 +104,7 @@ wl = (
     '/Library/Audio/',
     '/Library/CoreMediaIO/',
     '/Library/Extensions/',
-    '/Library/Frameworks/',
+#    '/Library/Frameworks/',
     '/Library/Image Capture/',
 #    '/Library/Internet Plug-Ins/',
     '/Library/Messages/',
