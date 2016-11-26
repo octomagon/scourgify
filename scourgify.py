@@ -122,8 +122,8 @@ wl = (
     '/private/var/',
     '/sbin/',
     '/System/Library/',
-    '/usr/sbin/',
     '/usr/libexec/',
+    '/usr/sbin/',
 )
 
 if __name__ == "__main__":
