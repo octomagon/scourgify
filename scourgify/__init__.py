@@ -3,10 +3,13 @@
 from os import listdir, geteuid
 from os.path import isfile, join, expanduser, exists
 from pprint import pprint
+import os
 import sys
 import psutil
-import plistlib
 
+
+package_directory = os.path.dirname(os.path.abspath(__file__))
+wl_file = os.path.join(package_directory, 'wl.txt')
 daemonPaths = ["/Library/LaunchAgents", "/Library/LaunchDaemons", "/Library/StartupItems", "~/Library/LaunchAgents"]
 
 
@@ -49,7 +52,7 @@ def showDaemons():
 
 
 def notWhitelisted(procs):
-	wl = [line.rstrip('\n') for line in open('./wl.txt')]
+	wl = [line.rstrip('\n') for line in open(wl_file)]
 
 	filtered = []
 	for p in procs:
