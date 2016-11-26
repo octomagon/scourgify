@@ -9,6 +9,7 @@ setup(
     name='Scourgify',
     version='0.1dev',
     packages=['scourgify',],
+    package_data={'scourgify': ['wl.txt']},
     install_requires=[
           'psutil',
       ],
