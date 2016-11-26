@@ -49,13 +49,17 @@ def getProcesses():
     return procs
 
 
+
 def showDaemons():
-    for p in daemonPaths:
-        print p
+	for p in daemonPaths:
+		d = os.path.expanduser(p)
 
-        for f in filesInDir(os.path.expanduser(p)):
-            print "\t" + f
+		if os.path.exists(d):
+			print p
 
+			for f in filesInDir(d):
+				if f != ".DS_Store":
+					print "\t" + f
 
 def filesInDir(path):
     return [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
