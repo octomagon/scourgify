@@ -17,6 +17,8 @@ def main():
     procs = getProcesses()
     procs = notWhitelisted(procs)
 
+    print ""
+
     for l in procs:
         print l
 
