@@ -107,6 +107,7 @@ wl = (
     '/Library/CoreMediaIO/',
     '/Library/Extensions/',
 #    '/Library/Frameworks/',
+    '/Library/Frameworks/iTunesLibrary.framework',
     '/Library/Image Capture/',
 #    '/Library/Internet Plug-Ins/',
     '/Library/Messages/',
